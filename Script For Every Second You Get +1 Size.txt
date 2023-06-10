@@ -1,0 +1,65 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Every Second You Get +1 Size","Midnight")
+
+---Tabs
+ 
+local Tab1 = window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Free Roblox Scripts")
+local Tab2 = window:NewTab("Sup")
+local Tab2Section = Tab2:NewSection("Sup is word")
+local Tab1Section = Tab1:NewSection("Made By biel17125")
+local Tab1Section = Tab1:NewSection("freerobloxscripts.com")
+ 
+---Buttons
+
+Tab1Section:NewToggle("Auto Wins (Map 1)", "Win wins automatically", function(state)
+    if state then
+_G.z1 = true
+while _G.z1 == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7187, 203, 670)
+wait(10)
+end
+     else
+_G.z1 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Wins (Map 2)", "Win wins automatically", function(state)
+    if state then
+_G.z2 = true
+while _G.z2 == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9929, 1418, 1534)
+wait(10)
+end
+     else
+_G.z2 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Wins (Map 3)", "Win wins automatically", function(state)
+    if state then
+_G.z3 = true
+while _G.z3 == true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(224, 3511, 28248)
+wait(10)
+end
+     else
+_G.z3 = false
+end
+end)
+
+Tab1Section:NewToggle("Auto Rebirth", "Make automatic rebirth", function(state)
+    if state then
+_G.r = true
+while _G.r == true do
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
+wait(2)
+end
+     else
+_G.r = false
+end
+end)
+
+Tab2Section:NewButton("Keyboard","Pc Like Keyboard",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
